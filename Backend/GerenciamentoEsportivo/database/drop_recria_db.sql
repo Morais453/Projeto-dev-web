@@ -13,10 +13,7 @@ DROP TABLE IF EXISTS usuario;
 SET
 FOREIGN_KEY_CHECKS = 1;
 
-
--- ============================================
 -- TABELA: USUARIO
--- ============================================
 CREATE TABLE usuario
 (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
@@ -26,9 +23,7 @@ CREATE TABLE usuario
     perfil     ENUM('admin', 'organizador', 'arbitro', 'visualizador') NOT NULL
 );
 
--- ============================================
 -- TABELA: CAMPEONATO
--- ============================================
 CREATE TABLE campeonato
 (
     id_campeonato  INT AUTO_INCREMENT PRIMARY KEY,
@@ -45,9 +40,7 @@ CREATE TABLE campeonato
             ON DELETE CASCADE
 );
 
--- ============================================
 -- TABELA: EQUIPE
--- ============================================
 CREATE TABLE equipe
 (
     id_equipe      INT AUTO_INCREMENT PRIMARY KEY,
@@ -63,9 +56,7 @@ CREATE TABLE equipe
             ON DELETE CASCADE
 );
 
--- ============================================
 -- TABELA: JOGADOR
--- ============================================
 CREATE TABLE jogador
 (
     id_jogador    INT AUTO_INCREMENT PRIMARY KEY,
@@ -80,9 +71,7 @@ CREATE TABLE jogador
             ON DELETE CASCADE
 );
 
--- ============================================
 -- TABELA: PARTIDA
--- ============================================
 CREATE TABLE partida
 (
     id_partida          INT AUTO_INCREMENT PRIMARY KEY,
@@ -104,9 +93,7 @@ CREATE TABLE partida
         FOREIGN KEY (id_equipe_visitante) REFERENCES equipe (id_equipe)
 );
 
--- ============================================
 -- TABELA: SET_PARTIDA
--- ============================================
 CREATE TABLE set_partida
 (
     id_set           INT AUTO_INCREMENT PRIMARY KEY,
@@ -120,9 +107,7 @@ CREATE TABLE set_partida
             ON DELETE CASCADE
 );
 
--- ============================================
 -- TABELA: CRITERIO_DESEMPATE
--- ============================================
 CREATE TABLE criterio_desempate
 (
     id_criterio   INT AUTO_INCREMENT PRIMARY KEY,
@@ -135,9 +120,8 @@ CREATE TABLE criterio_desempate
             ON DELETE CASCADE
 );
 
--- ============================================
+
 -- TABELA: AUDITORIA_RESULTADO
--- ============================================
 CREATE TABLE auditoria_resultado
 (
     id_auditoria     INT AUTO_INCREMENT PRIMARY KEY,
