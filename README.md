@@ -34,14 +34,14 @@ O sistema tem como objetivo **gerenciar campeonatos esportivos**, com foco inici
 ---
 
 ## Tecnologias Utilizadas
-| Camada | Tecnologias / Ferramentas |
-|--------|-----------------------------|
+| Camada | Tecnologias / Ferramentas                                        |
+|--------|------------------------------------------------------------------|
 | **Frontend** | HTML5, CSS3, JavaScript, (possível uso de React, Angular ou Vue) |
-| **Backend** | Java com Spring Boot |
-| **Containerização** | Docker e Docker Compose |
-| **Banco de Dados** | PostgreSQL |
-| **Versionamento** | Git / GitHub |
-| **Documentação** | Google Docs, README.md |
+| **Backend** | Java com Spring Boot                                             |
+| **Containerização** | Docker e Docker Compose                                          |
+| **Banco de Dados** | MySQL                                                            |
+| **Versionamento** | Git / GitHub                                                     |
+| **Documentação** | Google Docs, README.md                                           |
 
 ---
 
@@ -51,6 +51,7 @@ Projeto-dev-web/
 
 ├── backend/ → APIs e lógica de negócio (Spring Boot)\
 │ ├── src/\
+│ ├── database/\
 │ ├── pom.xml\
 │ └── Dockerfile\
 ├── frontend/ → Interface web (futuro)\
